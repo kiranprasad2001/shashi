@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Birds",
+      "folder": "birds",
+      "images": [
+        "bird1.jpg",
+        "bird2.jpg",
+        "bird3.jpg",
+        "bird4.jpg",
+        "bird5.jpg"
+      ]
+    },
+    {
+      "name": "Flags",
+      "folder": "flags",
+      "images": [
+        "australia.gif",
+        "bhutan.gif",
+        "brazil.gif",
+        "canada.gif",
+        "china.gif",
+        "denmark.gif",
+        "egypt.gif",
+        "france.gif",
+        "germany.gif"
+      ]
+    },
+    {
+      "name": "Capitals",
+      "folder": "capitals",
+      "images": [
+        "capital1.jpg",
+        "capital2.jpg",
+        "capital3.jpg"
+      ]
+    },
+    {
+      "name": "Alphabets",
+      "folder": "alphabets",
+      "images": [
+        "A.jpg", "B.jpg", "C.jpg", "D.jpg", "E.jpg", "F.jpg", "G.jpg", "H.jpg", "I.jpg", "J.jpg", "K.jpg", "L.jpg", "M.jpg", "N.jpg", "O.jpg", "P.jpg", "Q.jpg", "R.jpg", "S.jpg", "T.jpg", "U.jpg", "V.jpg", "W.jpg", "X.jpg", "Y.jpg", "Z.jpg"
+      ]
+    }
+  ]
