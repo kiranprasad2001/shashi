@@ -1,5 +1,25 @@
 [
   {
+    "name": "Birds",
+    "folder": "birds",
+    "images": [
+      "crow.jpg",
+      "duck.webp",
+      "eagle.jpeg",
+      "flamingo.jpg",
+      "goose.jpg",
+      "owl.jpg",
+      "parrot.jpg",
+      "peacock.webp",
+      "pigeon.jpg",
+      "seagulls.jpeg",
+      "sparrow.jpg",
+      "swallow.jpg",
+      "swan.jpg",
+      "woodpecker.jpg"
+    ]
+  },
+  {
     "name": "Flags",
     "folder": "flags",
     "images": [

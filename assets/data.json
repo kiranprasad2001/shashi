@@ -3,11 +3,20 @@
       "name": "Birds",
       "folder": "birds",
       "images": [
-        "bird1.jpg",
-        "bird2.jpg",
-        "bird3.jpg",
-        "bird4.jpg",
-        "bird5.jpg"
+        "crow.jpg",
+        "duck.webp",
+        "eagle.jpeg",
+        "flamingo.jpg",
+        "goose.jpg",
+        "owl.jpg",
+        "parrot.jpg",
+        "peacock.webp",
+        "pigeon.jpg",
+        "seagulls.jpeg",
+        "sparrow.jpg",
+        "swallow.jpg",
+        "swan.jpg",
+        "woodpecker.jpg"
       ]
     },
     {
