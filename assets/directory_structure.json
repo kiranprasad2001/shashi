@@ -1,5 +1,37 @@
 [
   {
+    "name": "Alphabets",
+    "folder": "alphabets",
+    "images": [
+      "A.jpg",
+      "B.jpg",
+      "C.jpg",
+      "D.jpg",
+      "E.jpg",
+      "F.jpg",
+      "G.jpg",
+      "H.jpg",
+      "I.jpg",
+      "J.jpg",
+      "K.jpg",
+      "L.jpg",
+      "M.jpg",
+      "N.jpg",
+      "O.jpg",
+      "P.jpg",
+      "Q.jpg",
+      "R.jpg",
+      "S.jpg",
+      "T.jpg",
+      "U.jpg",
+      "V.jpg",
+      "W.jpg",
+      "X.jpg",
+      "Y.jpg",
+      "Z.jpg"
+    ]
+  },
+  {
     "name": "Birds",
     "folder": "birds",
     "images": [
@@ -17,6 +49,37 @@
       "swallow.jpg",
       "swan.jpg",
       "woodpecker.jpg"
+    ]
+  },
+  {
+    "name": "Bugs",
+    "folder": "bugs",
+    "images": [
+      "ant.jpg",
+      "bee.jpg",
+      "beetle.jpg",
+      "butterfly.jpg",
+      "caterpillar.jpg",
+      "dragonfly.jpg",
+      "fly.jpg",
+      "grasshopper.jpg",
+      "ladybug.jpg",
+      "snail.jpg",
+      "spider.jpg",
+      "worm.jpg"
+    ]
+  },
+  {
+    "name": "Feelings",
+    "folder": "feelings",
+    "images": [
+      "angry.jpg",
+      "happy.jpg",
+      "hungry.jpg",
+      "sad.jpg",
+      "scared.jpg",
+      "thirsty.jpg",
+      "tired.jpg"
     ]
   },
   {
@@ -48,6 +111,35 @@
       "uk.gif",
       "usa.gif",
       "vietnam.gif"
+    ]
+  },
+  {
+    "name": "Shapes",
+    "folder": "shapes",
+    "images": [
+      "circle.jpg",
+      "crescent.jpg",
+      "diamond.jpg",
+      "heart.jpg",
+      "hexagon.jpg",
+      "oval.jpg",
+      "pentagon.jpg",
+      "rectangle.jpg",
+      "square.jpg",
+      "star.jpg",
+      "triangle.jpg"
+    ]
+  },
+  {
+    "name": "Weather",
+    "folder": "weather",
+    "images": [
+      "cloudy.jpg",
+      "rainy.jpg",
+      "snowy.jpg",
+      "stormy.jpg",
+      "sunny.jpg",
+      "windy.jpg"
     ]
   }
 ]
