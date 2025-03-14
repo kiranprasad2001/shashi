@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.getElementById('prev-button');
     const nextButton = document.getElementById('next-button');
     const closeButton = document.getElementById('close-button');
-    const fullscreenContent = document.getElementById('fullscreen-content'); // Get the fullscreen content div
+    const fullscreenContent = document.getElementById('fullscreen-content');
+    const themeCheckbox = document.getElementById('checkbox');
 
-    let modules = []; // Will be loaded from JSON
+    let modules = [];
     let currentModule = null;
     let currentImageIndex = 0;
     let imageList = [];
@@ -23,12 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load modules from data.json
     async function loadModules() {
         try {
-            const response = await fetch('assets/data.json'); // Fetch the JSON file
+            const response = await fetch('assets/data.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            modules = await response.json(); // Parse the JSON data
-            initializeGrid(); // Initialize the grid after loading modules
+            modules = await response.json();
+            initializeGrid();
         } catch (error) {
             console.error('Error loading modules:', error);
             alert('Failed to load modules. Check the console for errors.');
@@ -73,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeButton.addEventListener('click', () => {
-        fullscreenOverlay.classList.add('hidden');
-        currentModule = null;
-        imageList = [];
+        closeFullscreen(); // Use function to close fullscreen
     });
 
     // Function to create grid items
@@ -106,4 +105,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load the modules and initialize the grid
     loadModules();
+
+    // ------------------ Swipe Gesture ------------------
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    fullscreenContent.addEventListener('touchstart', (e) => {
+        touchstartX = e.changedTouches[0].screenX;
+    });
+
+    fullscreenContent.addEventListener('touchend', (e) => {
+        touchendX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeDistance = touchendX - touchstartX;
+        const swipeThreshold = 50; // Adjust as needed
+
+        if (swipeDistance > swipeThreshold) {
+            // Swipe right (previous)
+            displayImage(currentImageIndex - 1);
+        } else if (swipeDistance < -swipeThreshold) {
+            // Swipe left (next)
+            displayImage(currentImageIndex + 1);
+        }
+    }
+    // ------------------Click Outside Event ------------------
+    fullscreenOverlay.addEventListener('click', function(event) {
+        if (event.target === fullscreenOverlay) {
+            closeFullscreen();
+        }
+    });
+
+    // ------------------ Helper function  ------------------
+    function closeFullscreen() {
+        fullscreenOverlay.classList.add('hidden');
+        currentModule = null;
+        imageList = [];
+    }
+
+    // ------------------ Theme Toggle ------------------
+    themeCheckbox.addEventListener('change', () => {
+        const targetTheme = themeCheckbox.checked ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', targetTheme);
+    });
 });

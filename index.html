@@ -9,6 +9,10 @@
 <body>
     <header>
         <h1>Shashi Learning Zone</h1>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
     </header>
 
     <main id="grid-container">
@@ -17,7 +21,10 @@
 
     <div id="fullscreen-overlay" class="hidden">
         <div id="fullscreen-content">
-            <img id="fullscreen-image" src="" alt="Fullscreen Image">
+            <div id="fullscreen-scrollable-area">
+                <img id="fullscreen-image" src="" alt="Fullscreen Image">
+                <p id="filename-display"></p>
+            </div>
             <button id="prev-button">< Prev</button>
             <button id="next-button">Next ></button>
             <button id="close-button">Go Back</button>
