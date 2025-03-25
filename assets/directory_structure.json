@@ -1,5 +1,64 @@
 [
   {
+    "name": "Body parts",
+    "folder": "Body Parts",
+    "images": [
+      "Body Parts flashcards arm.jpeg",
+      "Body Parts flashcards arms.jpeg",
+      "Body Parts flashcards body.jpeg",
+      "Body Parts flashcards ear.jpeg",
+      "Body Parts flashcards ears.jpeg",
+      "Body Parts flashcards elbow.jpeg",
+      "Body Parts flashcards elbows.jpeg",
+      "Body Parts flashcards eye.jpeg",
+      "Body Parts flashcards eyebrow.jpeg",
+      "Body Parts flashcards eyebrows.jpeg",
+      "Body Parts flashcards eyelash.jpeg",
+      "Body Parts flashcards eyelashes.jpeg",
+      "Body Parts flashcards eyes.jpeg",
+      "Body Parts flashcards face.jpeg",
+      "Body Parts flashcards feet.jpeg",
+      "Body Parts flashcards finger.jpeg",
+      "Body Parts flashcards fingers.jpeg",
+      "Body Parts flashcards foot.jpeg",
+      "Body Parts flashcards hair.jpeg",
+      "Body Parts flashcards hand.jpeg",
+      "Body Parts flashcards hands.jpeg",
+      "Body Parts flashcards head.jpeg",
+      "Body Parts flashcards knee.jpeg",
+      "Body Parts flashcards knees.jpeg",
+      "Body Parts flashcards leg.jpeg",
+      "Body Parts flashcards legs.jpeg",
+      "Body Parts flashcards lips.jpeg",
+      "Body Parts flashcards mouth.jpeg",
+      "Body Parts flashcards neck.jpeg",
+      "Body Parts flashcards nose.jpeg",
+      "Body Parts flashcards shoulder.jpeg",
+      "Body Parts flashcards shoulders.jpeg",
+      "Body Parts flashcards teeth.jpeg",
+      "Body Parts flashcards thumb.jpeg",
+      "Body Parts flashcards toes.jpeg",
+      "Body Parts flashcards tongue.jpeg",
+      "Test"
+    ]
+  },
+  {
+    "name": "Prepositions",
+    "folder": "Prepositions",
+    "images": [
+      "Test",
+      "above-(dog).jpeg",
+      "behind-(dog).jpeg",
+      "below-(dogt).jpeg",
+      "by-(dog).jpeg",
+      "in-(dog).jpeg",
+      "in-between-(dog).jpeg",
+      "in-front-of-(dog).jpeg",
+      "on-(dog).jpeg",
+      "under-(dog).jpeg"
+    ]
+  },
+  {
     "name": "Alphabets",
     "folder": "alphabets",
     "images": [
@@ -40,16 +99,17 @@
       "eagle.jpeg",
       "flamingo.jpg",
       "goose.jpg",
+      "hen.webp",
       "owl.jpg",
       "parrot.jpg",
       "peacock.webp",
+      "penguin.jpeg",
       "pigeon.jpg",
       "seagulls.jpeg",
       "sparrow.jpg",
       "swallow.jpg",
       "swan.jpg",
-      "woodpecker.jpg",
-      "hen.webp"
+      "woodpecker.jpg"
     ]
   },
   {
@@ -100,6 +160,7 @@
     "name": "Flags",
     "folder": "flags",
     "images": [
+      "argentina.svg",
       "australia.gif",
       "bhutan.gif",
       "brazil.gif",
@@ -121,6 +182,7 @@
       "southkorea.gif",
       "spain.gif",
       "srilanka.gif",
+      "sweden.gif",
       "switzerland.gif",
       "uk.gif",
       "usa.gif",
