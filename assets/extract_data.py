@@ -29,7 +29,7 @@ def write_json_file(data, output_file):
 
 if __name__ == "__main__":
     root_directory = "."  # Use the current directory as the root
-    output_filename = "directory_structure.json"
+    output_filename = "data.json"
 
     if os.path.exists(root_directory) and os.path.isdir(root_directory):
         json_data = generate_directory_json(root_directory)
