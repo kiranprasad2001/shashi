@@ -39,11 +39,11 @@ jobs:
     # Step 4: Run your Python script to generate/update the JSON file
     # IMPORTANT: Ensure this path '/assets/extract_data.py' is correct
     #            relative to the root of your repository.
-    #- name: Run script to generate data
-    #  run: python ./assets/extract_data.py # Corrected path to be relative
     - name: Run script to generate data
-      working-directory: ./assets
-      run: python extract_data.py
+      run: python ./assets/extract_data.py # Corrected path to be relative
+    #- name: Run script to generate data
+    #  working-directory: ./assets
+    #  run: python extract_data.py
 
     # Step 5: Commit and push the generated JSON file if it has changed
     - name: Commit and push generated JSON
