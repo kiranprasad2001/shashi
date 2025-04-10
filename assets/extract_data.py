@@ -28,7 +28,7 @@ def write_json_file(data, output_file):
         json.dump(data, f, indent=2)
 
 if __name__ == "__main__":
-    root_directory = "."  # Use the current directory as the root
+    root_directory = "./assets"  # Use the current directory as the root
     output_filename = "data.json"
 
     if os.path.exists(root_directory) and os.path.isdir(root_directory):
