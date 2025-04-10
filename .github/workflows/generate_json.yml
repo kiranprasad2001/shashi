@@ -52,8 +52,8 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com" # Standard bot email convention
         
         # Check if the file exists before trying to add it
-        if [ -f data.json ]; then
-          git add data.json
+        if [ -f ./assets/data.json ]; then
+          git add ./assets/data.json
           
           # Check if there are staged changes (specifically for data.json)
           # If 'git diff --staged --quiet' exits with 1, there are changes
@@ -65,6 +65,6 @@ jobs:
             echo "No changes detected in data.json. Nothing to commit."
           fi
         else
-          echo "Error: data.json not found after running the script."
+          echo "Error: data.json not found in ./assets after running the script."
           exit 1 # Exit with an error code if the file wasn't created
         fi
