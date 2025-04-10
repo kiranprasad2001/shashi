@@ -47,19 +47,19 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com" # Standard bot email convention
         
         # Check if the file exists before trying to add it
-        if [ -f generated.json ]; then
-          git add generated.json
+        if [ -f data.json ]; then
+          git add data.json
           
-          # Check if there are staged changes (specifically for generated.json)
+          # Check if there are staged changes (specifically for data.json)
           # If 'git diff --staged --quiet' exits with 1, there are changes
           if ! git diff --staged --quiet; then
             echo "Changes detected in generated.json. Committing and pushing..."
-            git commit -m "Update generated.json [Automated]"
+            git commit -m "Update data.json [Automated]"
             git push
           else
-            echo "No changes detected in generated.json. Nothing to commit."
+            echo "No changes detected in data.json. Nothing to commit."
           fi
         else
-          echo "Error: generated.json not found after running the script."
+          echo "Error: data.json not found after running the script."
           exit 1 # Exit with an error code if the file wasn't created
         fi
