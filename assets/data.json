@@ -120,6 +120,17 @@
     ]
   },
   {
+    "name": "Cars",
+    "folder": "cars",
+    "images": [
+      "Audi.webp",
+      "honda.jpg",
+      "hyndai.webp",
+      "toyota.jpg",
+      "volkswagen.webp"
+    ]
+  },
+  {
     "name": "Continents",
     "folder": "continents",
     "images": [
