@@ -1,0 +1,25 @@
+[
+  {
+    "name": ".git",
+    "folder": ".git",
+    "images": [
+      "FETCH_HEAD",
+      "HEAD",
+      "config",
+      "config.worktree",
+      "description",
+      "index",
+      "shallow"
+    ]
+  },
+  {
+    "name": "Assets",
+    "folder": "assets",
+    "images": [
+      ".DS_Store",
+      "data.json",
+      "directory_structure.json",
+      "extract_data.py"
+    ]
+  }
+]
