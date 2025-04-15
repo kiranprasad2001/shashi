@@ -102,7 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const translateItem = document.createElement('div');
         translateItem.className = 'grid-item';
         translateItem.textContent = 'Translate';
-        translateItem.onclick = () => openIframePopup('https://translate.spotrot.com');
+        translateItem.onclick = () => {
+            window.open('https://translate.spotrot.com', '_blank');
+        };        
         gridContainer.appendChild(translateItem);
 
         modules.forEach(module => {
