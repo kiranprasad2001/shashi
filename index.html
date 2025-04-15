@@ -44,5 +44,26 @@
     </div>
 
     <script src="script.js"></script>
+
+    <!-- Fullscreen Iframe Popup -->
+    <div id="iframe-popup" class="hidden">
+        <div id="iframe-content">
+            <iframe id="iframe-viewer" src="" frameborder="0"></iframe>
+            <button onclick="closeIframePopup()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function openIframePopup(url) {
+            document.getElementById('iframe-viewer').src = url;
+            document.getElementById('iframe-popup').classList.remove('hidden');
+        }
+
+        function closeIframePopup() {
+            document.getElementById('iframe-popup').classList.add('hidden');
+            document.getElementById('iframe-viewer').src = ''; // clear to stop audio etc.
+        }
+</script>
+
 </body>
 </html>
