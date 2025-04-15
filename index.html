@@ -26,8 +26,6 @@
     </section>
 -->
     <main id="grid-container">
-        <!-- Translate Module Grid Card -->
-        <button class="card" onclick="openIframePopup('https://translate.spotrot.com')">Translate</button>
         <!-- Learning modules will be added here dynamically by JavaScript -->
     </main>
 
@@ -52,18 +50,6 @@
             <button onclick="closeIframePopup()">Go Back</button>
         </div>
     </div>
-
-    <script>
-        function openIframePopup(url) {
-            document.getElementById('iframe-viewer').src = url;
-            document.getElementById('iframe-popup').classList.remove('hidden');
-        }
-
-        function closeIframePopup() {
-            document.getElementById('iframe-popup').classList.add('hidden');
-            document.getElementById('iframe-viewer').src = ''; // clear to stop audio etc.
-        }
-</script>
 
 </body>
 </html>

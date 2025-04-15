@@ -97,6 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the grid
     function initializeGrid() {
         gridContainer.innerHTML = ''; // Clear existing items
+
+        // Add Translate Module first
+        const translateItem = document.createElement('div');
+        translateItem.className = 'grid-item';
+        translateItem.textContent = 'Translate';
+        translateItem.onclick = () => openIframePopup('https://translate.spotrot.com');
+        gridContainer.appendChild(translateItem);
+
         modules.forEach(module => {
             const gridItem = createGridItem(module);
             gridContainer.appendChild(gridItem);
@@ -150,4 +158,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetTheme = themeCheckbox.checked ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', targetTheme);
     });
+
+    function openIframePopup(url) {
+        document.getElementById('iframe-viewer').src = url;
+        document.getElementById('iframe-popup').classList.remove('hidden');
+    }
+    
+    function closeIframePopup() {
+        document.getElementById('iframe-popup').classList.add('hidden');
+        document.getElementById('iframe-viewer').src = ''; // Reset for performance
+    } 
+
 });
