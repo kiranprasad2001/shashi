@@ -214,6 +214,22 @@
     ]
   },
   {
+    "name": "Planets",
+    "folder": "planets",
+    "images": [
+      "earth.jpeg",
+      "jupiter.png",
+      "mars.jpg",
+      "mercury.webp",
+      "neptune.webp",
+      "saturn.jpg",
+      "solarsystem.webp",
+      "sun.jpg",
+      "uranus.png",
+      "venus.webp"
+    ]
+  },
+  {
     "name": "Shapes",
     "folder": "shapes",
     "images": [
